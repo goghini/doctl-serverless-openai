@@ -1,0 +1,17 @@
+{
+  "name": "example-cron",
+  "description": "Example cron job",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --runInBand --forceExit --verbose false",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

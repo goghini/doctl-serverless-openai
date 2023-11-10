@@ -1,0 +1,16 @@
+environment:
+  NAME: ${NAME}
+packages:
+  - name: package
+    functions:
+      - name: example-function
+        runtime: 'nodejs:default'
+        limits:
+          timeout: 5000
+          memory: 256
+          logs: 256
+      - name: example-cron
+        runtime: 'nodejs:18'
+        sourceType: scheduler
+        sourceDetails:
+          cron: 0 0 * * MON-FRI

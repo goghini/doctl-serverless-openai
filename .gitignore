@@ -1,0 +1,25 @@
+# Digital Ocean
+__deployer__.zip
+.nimbella
+
+# IDEs and editors
+.idea
+
+# Node
+node_modules
+dist
+coverage/
+package-lock.json
+
+# OS generated files
+.DS_Store
+
+# Python
+__pycache__/
+
+# Security
+.env
+
+
+
+
