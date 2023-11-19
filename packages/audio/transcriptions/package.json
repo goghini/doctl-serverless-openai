@@ -1,0 +1,22 @@
+{
+  "name": "doctl-functions-openai-audio-transcribe",
+  "description": "A function that transcribes audio files using OpenAI's API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "openai",
+    "doctl",
+    "digitalocean",
+    "audio-transcription",
+    "tts",
+    "openai"
+  ],
+  "author": "Deviant Ops",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

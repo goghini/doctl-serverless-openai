@@ -1,16 +1,63 @@
-environment:
-  NAME: ${NAME}
 packages:
-  - name: package
+  - name: audio
     functions:
-      - name: example-function
-        runtime: 'nodejs:default'
-        limits:
-          timeout: 5000
-          memory: 256
-          logs: 256
-      - name: example-cron
+      - name: speech
         runtime: 'nodejs:18'
-        sourceType: scheduler
-        sourceDetails:
-          cron: 0 0 * * MON-FRI
+        limits:
+          timeout: 60000
+      - name: transcriptions
+        runtime: 'nodejs:18'
+        limits:
+          timeout: 60000
+  - name: files
+    functions:
+      - name: delete
+        runtime: 'nodejs:18'
+      - name: get
+        runtime: 'nodejs:18'
+      - name: list
+        runtime: 'nodejs:18'
+      - name: list-assistants
+        runtime: 'nodejs:18'
+      - name: list-assistants_output
+        runtime: 'nodejs:18'
+      - name: list-fine-tune
+        runtime: 'nodejs:18'
+      - name: list-fine-tune-results
+        runtime: 'nodejs:18'
+      - name: upload
+        runtime: 'nodejs:18'
+        limits:
+          timeout: 60000
+          memory: 512
+  - name: images
+    functions:
+      - name: create
+        runtime: 'nodejs:18'
+        limits:
+          timeout: 60000
+  - name: messages
+    functions:
+      - name: create
+        runtime: 'nodejs:18'
+      - name: delete
+        runtime: 'nodejs:18'
+      - name: get
+        runtime: 'nodejs:18'
+      - name: list
+        runtime: 'nodejs:18'
+      - name: list-files
+        runtime: 'nodejs:18'
+      - name: update
+        runtime: 'nodejs:18'
+  - name: threads
+    functions:
+      - name: create
+        runtime: 'nodejs:18'
+      - name: delete
+        runtime: 'nodejs:18'
+      - name: get
+        runtime: 'nodejs:18'
+      - name: update
+        runtime: 'nodejs:18'
+

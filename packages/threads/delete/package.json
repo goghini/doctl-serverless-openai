@@ -1,0 +1,17 @@
+{
+  "name": "doctl-functions-openai-threads-delete",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "openai",
+    "digitalocean",
+    "doctl"
+  ],
+  "author": "Deviant Ops",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

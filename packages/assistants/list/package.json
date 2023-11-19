@@ -1,0 +1,20 @@
+{
+  "name": "openai-assistants-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "openai",
+    "digitalocean",
+    "doctl"
+  ],
+  "author": "James Cartwright",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "openai": "^4.17.3"
+  }
+}
