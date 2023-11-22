@@ -19,8 +19,8 @@ async function main(params) {
     // Here we go
     try {
         const request = await getOpenAiAssistant(params);
-
-        return successResponse(request || "Retrieving Assistant", "No assistant found")
+        if (!request) return successResponse(request);
+        return errorFunctionResponse("Retrieving Assistant", "No Assistant Found");
     } catch (error) {
         throw (errorFunctionResponse("Retrieving Assistant", error));
     }
