@@ -8,7 +8,7 @@ import {uploadOpenAiFile} from "../../../lib/openai/files";
  * @param params
  * @return {Promise<{headers: {"Content-Type": string}, body, statusCode: number}|{body: string, statusCode: number}>}
  */
-async function main(params) {
+async function main (params) {
 
     // Let's always start with this, so we know we have the right params and the user has access
     params = parseParams(params);
@@ -19,7 +19,7 @@ async function main(params) {
     try {
         return successResponse(await uploadOpenAiFile(params));
     } catch (error) {
-        throw (errorFunctionResponse("Uploading File", error))
+        throw (errorFunctionResponse("Uploading File", JSON.stringify(error)));
     }
 }
 
@@ -27,7 +27,7 @@ async function main(params) {
  * Returns the required params for this action
  * @returns {string[]}
  */
-function requiredParams() {
+function requiredParams () {
     return ["file"];
 }
 

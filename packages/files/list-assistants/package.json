@@ -1,5 +1,5 @@
 {
-  "name": "doctl-functions-openai-threads-list",
+  "name": "doctl-functions-openai-files-list-assistants",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,6 @@
   ],
   "author": "Deviant Ops",
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.3",
     "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "openai": "^4.17.3"
   }
 }

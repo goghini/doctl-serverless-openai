@@ -1,8 +1,8 @@
 environment:
   ACCESS_TOKEN: ${ ACCESS_TOKEN }
   DEBUG: ${ DEBUG }
+  LOG_DESTINATIONS: ${ LOG_DESTINATIONS }
   DIGITALOCEAN_BASE_URL: ${ DIGITALOCEAN_BASE_URL }
-  LOGTAIL_TOKEN: ${ LOGTAIL_TOKEN }
   OPENAI_API_KEY: ${ OPENAI_API_KEY }
   OPENAI_ASSISTANT_MODEL: ${ OPENAI_ASSISTANT_MODEL }
   OPENAI_IMAGE_SIZE: ${ OPENAI_IMAGE_SIZE }
@@ -10,6 +10,26 @@ environment:
   OPENAI_ORG_ID: ${ OPENAI_ORG_ID }
   OPENAI_VOICE: ${ OPENAI_VOICE }
 packages:
+  - name: assistants
+    functions:
+      - name: create
+        runtime: 'nodejs:18'
+      - name: create-file
+        runtime: 'nodejs:18'
+      - name: delete
+        runtime: 'nodejs:18'
+      - name: delete-file
+        runtime: 'nodejs:18'
+      - name: get
+        runtime: 'nodejs:18'
+      - name: get-file
+        runtime: 'nodejs:18'
+      - name: list
+        runtime: 'nodejs:18'
+      - name: list-files
+        runtime: 'nodejs:18'
+      - name: update
+        runtime: 'nodejs:18'
   - name: audio
     functions:
       - name: speech

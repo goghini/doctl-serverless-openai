@@ -5,7 +5,6 @@
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
-  "private": true,
   "keywords": [
     "openai",
     "digitalocean",
@@ -13,11 +12,6 @@
   ],
   "author": "Deviant Ops",
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.3",
     "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "axios": "^1.6.1",
-    "openai": "^4.17.3"
   }
 }

@@ -6,16 +6,13 @@
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
+  "private": true,
   "keywords": [
     "openai",
-    "doctl",
     "digitalocean",
-    "text-to-speech",
-    "tts",
-    "openai"
+    "doctl"
   ],
   "author": "Deviant Ops",
-  "license": "ISC",
   "devDependencies": {
     "webpack-cli": "^5.1.4"
   }

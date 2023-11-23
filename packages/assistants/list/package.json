@@ -10,11 +10,8 @@
     "digitalocean",
     "doctl"
   ],
-  "author": "James Cartwright",
+  "author": "Deviant Ops",
   "devDependencies": {
     "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "openai": "^4.17.3"
   }
 }

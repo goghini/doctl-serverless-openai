@@ -5,18 +5,13 @@
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
-  "private": true,
   "keywords": [
     "openai",
     "digitalocean",
     "doctl"
   ],
-  "author": "James Cartwright",
+  "author": "Deviant Ops",
   "devDependencies": {
     "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "axios": "^1.6.1",
-    "openai": "^4.17.3"
   }
 }
